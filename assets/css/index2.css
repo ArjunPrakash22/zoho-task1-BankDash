@@ -235,6 +235,11 @@ body {
   /* text-align: left; */
 }
 
+.credit-cards-my-cards-row1{
+  text-align:left;
+  padding: 0px 40px 0px 40px;
+}
+
 .credit-cards-head {
   color: rgb(51, 59, 105);
   padding: 20px 0px 20px 0px;
@@ -244,11 +249,13 @@ body {
   font-weight: 600;
 }
 
+.cards-row1-card{
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .card1 {
-  display: inline-block;
-  vertical-align: top;
   font-size: 0px;
-  position: relative;
   border-radius: 25px;
   background: linear-gradient(
     107deg,
@@ -259,9 +266,6 @@ body {
 
 .card2 {
   margin-left: 30px;
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
   border-radius: 25px;
   background: linear-gradient(
     107deg,
@@ -275,10 +279,7 @@ body {
   margin-left: 30px;
   width: 350px;
   height: 225px;
-  display: inline-block;
-  vertical-align: top;
   font-size: 0px;
-  position: relative;
   border-radius: 25px;
   border: 1px solid rgb(223, 234, 242);
   background: rgb(255, 255, 255);
@@ -287,8 +288,7 @@ body {
 .cards-row1 {
   overflow-x: scroll;
   white-space: nowrap;
-  padding: 0px 40px 0px 40px;
-  text-align: left;
+  max-width:1110px;
 }
 
 .card-layer1 {
@@ -340,6 +340,7 @@ body {
 }
 
 .holder-name {
+  max-width: 90px;
   overflow-wrap: break-word;
   white-space: normal;
   display: block;
@@ -465,7 +466,6 @@ body {
 }
 
 .acc-no-div-third {
-  position: absolute;
   bottom: 0px;
   width: 100%;
   padding: 22px 36px;
@@ -631,6 +631,12 @@ body {
   font-weight: 400;
   margin-top: 7px;
   font-family: Inter;
+}
+
+.card-block-name{
+    max-width:100px;
+  overflow-wrap:break-word;
+  white-space:normal;
 }
 
 .card-a {
