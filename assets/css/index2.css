@@ -32,6 +32,7 @@ body {
 }
 
 .credit-card-page {
+  /* width: 100%; */
   height: 100%;
 }
 
@@ -111,15 +112,11 @@ body {
 }
 
 .main-area-div {
-  /* position: static; */
   width: calc(100% - 250px);
-  /* width: 100%; */
   height: 100%;
   margin-left: 250px;
   margin-right: auto;
   text-align: center;
-  /* background: rgb(245, 247, 250); */
-  border-left: 1px solid rgb(230, 239, 245);
 }
 
 .main-area-head {
@@ -137,6 +134,7 @@ body {
   padding: 33px 0px 32px 0px;
   position: relative;
   text-align: left;
+  width: 100%;
 }
 
 .main-area-side {
@@ -237,7 +235,7 @@ body {
 
 .credit-cards-my-cards-row1{
   text-align:left;
-  padding: 0px 40px 0px 40px;
+  padding: 0px 25px 0px 25px;
 }
 
 .credit-cards-head {
@@ -277,8 +275,6 @@ body {
 
 .card3 {
   margin-left: 30px;
-  width: 350px;
-  height: 225px;
   font-size: 0px;
   border-radius: 25px;
   border: 1px solid rgb(223, 234, 242);
@@ -388,6 +384,7 @@ body {
 }
 
 .card-icon {
+  position:relative;
   float: right;
   width: 44px;
   height: 30px;
@@ -431,6 +428,7 @@ body {
 }
 
 .card-holder-txt-third {
+  padding-right: 67px;
   color: rgb(113, 142, 191);
   font-family: lato;
   font-size: 12px;
@@ -467,15 +465,13 @@ body {
 
 .acc-no-div-third {
   bottom: 0px;
-  width: 100%;
-  padding: 22px 36px;
   border-radius: 0px 0px 25px 25px;
   border-top: 1px solid rgb(223, 234, 242);
 }
 
 .acc-no-third {
+  padding:22px 26px;
   color: rgb(52, 60, 106);
-  width: 100%;
   font-family: lato;
   font-size: 22px;
   font-style: normal;
@@ -709,7 +705,7 @@ body {
 }
 
 .add-new-card-div1 {
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 27px 30px 40px;
   background: rgb(255, 255, 255);
   /* margin-left: 40px; */
@@ -762,7 +758,7 @@ body {
 }
 
 .card-settings-item-icon-div {
-  padding: 18px 17px 17px 18px;
+  padding: 16px 17px 15px 17px;
   background: rgb(255, 245, 217);
   text-align: center;
   border-radius: 20px;
@@ -780,6 +776,10 @@ body {
   margin-left: 30px;
   border-radius: 25px;
   height: 440px;
+}
+
+.card-settings-item{
+  cursor:pointer;
 }
 
 .card-settings-item-row {
@@ -811,3 +811,184 @@ body {
   margin-left: 30px;
   text-align: left;
 }
+
+
+
+
+@media(max-width:1024px){
+  .navbar-main-div{
+    max-width: 230px;
+    /* height:100%; */
+  }
+  .main-area-div{
+    width: calc(100% - 230px) !important;
+    margin-left:230px;
+    /* margin-right: auto; */
+    /* height: 100%; */
+  }
+  .main-area-head{
+    font-size:25px;
+  }
+  .navbar-items{
+    font-size:16px;
+    padding: 12px 3px 12px 30px;
+  }
+  .logo-img{
+    padding: 27px 0px 22px 34px;
+  }
+  .logo-name{
+    padding-right:13px;
+  }
+  .cards-row1{
+    max-width: 743px;
+  }
+  .card2, .card3{
+    margin-left:25px;
+  }
+  .card-layer1{
+    padding:17px 20px 0px 20px;
+  }
+  .card-layer2{
+    padding:23px 34px 0px 20px;
+  }
+  .bal-txt, .bal-txt-third{
+    font-size:11px;
+    padding-right:111px;
+  }
+  .bal-amt , .bal-amt-third{
+    font-size:16px;
+  }
+  .card-holder-txt, .card-holder-txt-third{
+    font-size:10px;
+    padding-right:41px;
+  }
+  .holder-name, .holder-name-third{
+    font-size:13px;
+  }
+  .valid-thru-txt, .valid-thru-txt-third{
+    font-size:10px;
+  }
+  .valid-date, .valid-date-third{
+    font-size:13px;
+  }
+  .acc-no, .acc-no-third{
+    font-size:15px;
+    padding: 16px 20px 17px 20px;
+  }
+  .card-icon{
+    width:27px;
+    height:19px;
+  }
+  .circle-span-1, .circle-span-2, .circle-span-3{
+    width:18px;
+    height:18px;
+    border-radius:18px;
+  }
+  .progress-bar{
+    padding:20px 44px 0px 45px;
+  }
+  .progress-bar svg{
+    width:141px;
+    height:140px;
+  }
+  .progress-bank-name-col1{
+    padding-right:17px;
+  }
+  .progress-bank-names {
+    padding:10px 26px 19px 26px;
+  }
+  .bank-name2{
+    margin-top:12px;
+  }
+  .card-p{
+    font-size:12px;
+  }
+  .card-block{
+    font-size:11px;
+  }
+  .card-div1{
+    margin-left:16px;
+  }
+  .card-div2{
+    margin-left:12px;
+  }
+  .credit-logo1 .icon-credit{
+    font-size:20px;
+  }
+  .credit-logo1{
+    padding:12px 13px 13px 12px;
+    border-radius:15px;
+  }
+  .card-list-row{
+    padding:12px 15px 12px 12px; 
+  }
+  .cards-list{
+    margin-left:25px;
+    /* width: 487px; */
+  }
+  .card-a{
+    font-size:11px;
+  }
+  .credit-cards-sec-head{
+    margin-left:25px;
+  }
+  .bank-name{
+    font-size:12px;
+  }
+  .pt-circle{
+    width:12px;
+    height:12px;
+  }
+  .credit-cards-head{
+    font-size:18px;
+  }
+  .add-new-card-p{
+    font-size:12px;
+    max-width:447px;
+    line-height: 22px;
+  }
+  .add-new-card-div1{
+    padding:19px 20px 25px 20px;
+  }
+  .add-new-card-label{
+    font-size:12px;
+  }
+  .add-new-card-input{
+    padding:13px 100px 12px 15px;
+  }
+  .add-new-card-form-div2{
+    margin-left:25px;
+  }
+  .add-new-card-button{
+    font-size:15px;
+    padding: 11px 26px;
+  }
+  .add-new-card-form {
+    margin-top:15px;
+  }
+  .card-settings-item-icon-div .icon-credit{
+    font-size:20px;
+  }
+  .card-settings-item-icon-div{
+    padding:12px 13px 12px 13px;
+  }
+  .card-settings-inner-div-p{
+    font-size:12px;
+  }
+  .card-settings-inner-div-span{
+    font-size:11px;
+  }
+  .card-settings{
+    padding:20px 18px 20px 18px;
+    margin-left: 25px;
+  }
+  .card-settings-item-row {
+    margin-top:14px;
+  }
+  .card-list-row2{
+    margin-top:12px;
+  } 
+}
+
+
+
