@@ -1,0 +1,802 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.woff") format("truetype");
+}
+
+@font-face {
+  font-family: "mont";
+  src: url("../fonts/mont-heavy.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "lato";
+  src: url("../fonts/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "inter-regular";
+  src: url("../fonts/Inter-Regular.otf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.credit-card-page {
+  width: 100%;
+}
+
+.credit-card-page-div {
+  display: inline-block;
+}
+
+.navbar-div {
+  width: 17%;
+  height: 110vh;
+  border: 1px solid #e6eff5;
+}
+
+.navbar-main-div {
+  text-align: center;
+  padding: 20px;
+}
+
+.navbar-main-head {
+}
+
+.navbar-list {
+  margin-top: 20px;
+}
+
+.navbar-items {
+  text-align: left;
+  /* margin-left: 30px; */
+  width: 100%;
+}
+
+.items {
+  text-decoration: none;
+  font-family: "Inter";
+  font-size: 18px;
+  color: #b1b1b1;
+  font-weight: 500;
+}
+
+.items:hover svg path,
+.items:hover {
+  color: #1814f3;
+  fill: #1814f3;
+}
+
+.navbar-items::after {
+  content: " ";
+  display: inline-block;
+  width: 100%;
+}
+
+.logo-img {
+  display: inline-block;
+}
+
+.logo-name {
+  display: inline-block;
+  font-family: "mont";
+  font-size: 25px;
+  color: #343c6a;
+  font-weight: 900;
+}
+
+.main-area-div {
+  width: 83%;
+  height: 110vh;
+  margin: 0 auto;
+  float: right;
+  position: relative;
+  background: #f5f7fa;
+}
+
+.main-area-head {
+  display: inline-block;
+  color: #343c6a;
+  font-family: "Inter";
+  font-size: 28px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 30px;
+}
+
+.main-area-top-nav {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  border-bottom: 1px solid #e6eff5;
+}
+
+.main-area-side {
+  float: right;
+  display: inline-block;
+  right: 25px;
+  height: 100px;
+  position: relative;
+  text-align: justify;
+}
+
+.search-bar {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-input {
+  border-radius: 40px;
+  background: #f5f7fa;
+  box-sizing: border-box;
+  border: none;
+  padding: 20px 60px;
+  width: 100%;
+  height: 50px;
+}
+
+.search-input::placeholder {
+  color: #8ba3cb;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  width: 100%;
+  padding-right: 15px;
+}
+
+.icon-magnifying {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  color: #718ebf;
+  font-size: 20px;
+}
+
+.settings-a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #f5f7fa;
+  position: relative;
+  top: 50%;
+  transform: translateY(-60%);
+  text-align: center;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.icon-settings-1 {
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  color: #718ebf;
+  font-size: 25px;
+}
+
+.notification-a {
+  margin-left: 30px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #f5f7fa;
+  position: relative;
+  top: 50%;
+  transform: translateY(-60%);
+  text-align: center;
+  text-decoration: none;
+}
+
+.icon-notification {
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  color: #fe5c73;
+}
+
+.profile-a {
+  margin-left: 30px;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #f5f7fa;
+  position: relative;
+  top: 50%;
+  transform: translateY(-60%);
+  text-align: center;
+}
+
+.profile-icon {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.profile-a svg path {
+  fill: black;
+}
+
+.credit-card-my-cards {
+  background: #f5f7fa;
+}
+
+.credit-cards-head {
+  color: #333b69;
+  padding: 20px 0px 20px 30px;
+  font-family: "Inter";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.card1 {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0px;
+  position: relative;
+  border-radius: 25px;
+  background: linear-gradient(107deg, #2d60ff 2.61%, #539bff 101.2%);
+}
+
+.card2 {
+  margin-left: 30px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0 !important;
+  border-radius: 25px;
+  background: linear-gradient(107deg, #4c49ed 2.61%, #0a06f4 101.2%);
+}
+
+.card3 {
+  margin-left: 30px;
+  width: 350px;
+  height: 225px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+  position: relative;
+  border-radius: 25px;
+  border: 1px solid #dfeaf2;
+  background: #fff;
+}
+
+.cards-row1 {
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding: 0px 40px 0px 40px;
+}
+
+.card-layer1 {
+  padding-top: 25px;
+  padding-left: 26px;
+  padding-right: 25px;
+}
+
+.card-layer-one {
+  display: inline-block;
+}
+
+.bal-txt {
+  padding-right: 202px;
+  color: #fff;
+  font-family: lato;
+  font-size: 12px;
+}
+
+.bal-amt {
+  display: block;
+  color: #fff;
+  font-family: lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.chip-img-div {
+  float: right;
+}
+
+.card-layer2 {
+  padding: 29px 97px 30px 26px;
+}
+
+.card-layer-two {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card-holder-txt {
+  padding-right: 67px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.holder-name {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  display: block;
+  color: #fff;
+  font-family: lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.valid-thru-txt {
+  float: right;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.valid-date {
+  display: block;
+  color: #fff;
+  font-family: lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.acc-no-div {
+  bottom: 0;
+  border-radius: 0 0 25px 25px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.acc-no {
+  padding: 22px 26px;
+  color: #fff;
+  font-family: lato;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.card-icon {
+  float: right;
+  width: 44px;
+  height: 30px;
+}
+
+.circle-span-1 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+}
+
+.circle-span-2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  float: right;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.circle-span-3 {
+  background: rgba(145, 153, 175, 0.5);
+}
+
+.bal-txt-third {
+  color: #718ebf;
+
+  font-family: lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.bal-amt-third {
+  display: block;
+  color: #343c6a;
+
+  font-family: lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.card-holder-txt-third {
+  color: #718ebf;
+  font-family: lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.holder-name-third {
+  color: #343c6a;
+  display: block;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.valid-thru-txt-third {
+  float: right;
+  color: #718ebf;
+  font-family: lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.valid-date-third {
+  display: block;
+  color: #343c6a;
+  font-family: lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.acc-no-div-third {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 22px 36px;
+  border-radius: 0 0 25px 25px;
+  border-top: 1px solid #dfeaf2;
+}
+
+.acc-no-third {
+  color: #343c6a;
+  width: 100%;
+  font-family: lato;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.cards-row2-div {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0px;
+  padding-right: 20px;
+}
+
+.cards-row2-div1-box {
+  background: #fff;
+  position: relative;
+  border-radius: 25px;
+  margin-left: 40px;
+}
+
+.progress-bar {
+  text-align: center;
+  padding: 30px 0px 0px 0px;
+}
+
+.pt-circle {
+  display: inline-block;
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  background: #4c78ff;
+  border-radius: 50%;
+}
+
+.pink {
+  background: #ff82ac;
+}
+
+.green {
+  background: #16dbcc;
+}
+
+.yellow {
+  background: #ffbb38;
+}
+
+.bank-name {
+  color: #718ebf;
+  font-family: "Inter";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.progress-bank-names {
+  padding: 15px 50px 28px 50px;
+}
+
+.progress-bank-name-col {
+  display: inline-block;
+  font-size: 0;
+  text-align: center;
+}
+
+.progress-bank-name-col1 {
+  padding-right: 48px;
+}
+
+.progress-bank-name-col2 {
+  float: right;
+}
+
+.bank-name2 {
+  margin-top: 15px;
+}
+
+.cards-list {
+  margin-left: 30px;
+  overflow: scroll;
+  white-space: nowrap;
+}
+
+.card-list-row {
+  padding: 15px 30px 15px 15px;
+  background: #fff;
+  border-radius: 20px;
+  position: relative;
+}
+
+.credit-logo1 {
+  border-radius: 20px;
+  background: #e7edff;
+  font-size: 0;
+  padding: 17px;
+}
+
+.credit-logo1 .icon-credit {
+  color: #396aff;
+  position: relative;
+  font-size: 26px;
+}
+
+.credit-logo-pink {
+  background: #ffe0eb;
+}
+
+.credit-logo-pink .icon-credit {
+  color: #ff82ac;
+}
+
+.credit-logo-yellow {
+  background: #fff5d9;
+}
+
+.credit-logo-yellow .icon-credit {
+  color: #ffbb38;
+}
+
+.card-list-div {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+.card-div {
+  margin-left: 15px;
+  font-size: 0;
+}
+
+.card-div1 {
+  margin-left: 44px;
+}
+
+.card-div2 {
+  margin-left: 34px;
+  font-size: 0;
+}
+
+.card-p {
+  color: #232323;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.card-block {
+  display: block;
+  color: #718ebf;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 7px;
+  font-family: "Inter";
+}
+
+.card-a {
+  text-decoration: none;
+  color: #1814f3;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.card-list-row2 {
+  margin-top: 20px;
+}
+
+.cards-row3-div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.add-new-card-div {
+}
+
+.add-new-card-p {
+  color: #718ebf;
+  font-family: inter-regular;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 28px;
+}
+
+.add-new-card-div-p {
+  max-width: 633px;
+  overflow-wrap: break-word;
+  padding-right: 37px;
+}
+
+.add-new-card-form {
+  margin-top: 30px;
+}
+
+.add-new-card-form-div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.add-new-card-input {
+  display: block;
+  margin-top: 11px;
+  padding: 16px 157px 16px 20px;
+  border-radius: 15px;
+  border: 1px solid #dfeaf2;
+}
+
+.add-new-card-label {
+  color: #232323;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.add-new-card-inp2 {
+  margin-top: 22px;
+}
+
+.add-new-card-form-div2 {
+  /* float: right; */
+  margin-left: 30px;
+}
+
+.add-new-card-div1 {
+  border-radius: 20px;
+  padding: 27px 30px 40px 30px;
+  background: #fff;
+  margin-left: 40px;
+  /* width: 730px; */
+  /* height: 440px; */
+}
+
+.add-new-card-input::placeholder {
+  color: #718ebf;
+  font-family: Inter-regular;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.add-new-card-button {
+  display: block;
+  margin-top: 30px;
+  border-radius: 9px;
+  background: #1814f3;
+  padding: 14px 39px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.card-settings-inner-div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card-settings-inner-div-p {
+  margin-left: 20px;
+  color: #232323;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  text-align: left;
+}
+
+.card-settings-inner-div-span { 
+  display: block;
+  color: #718ebf;
+  font-family: Inter-regular;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 7px;
+}
+
+.card-settings-item-icon-div {
+  padding: 18px 17px 17px 18px;
+  background: #fff5d9;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.card-settings-item-icon-div .icon-credit {
+  color: #ffbb38;
+  font-size: 25px;
+}
+
+.card-settings {
+  background: #fff;
+  text-align: left;
+  padding: 30px 49px 30px 30px;
+  margin-left: 30px;
+  border-radius: 25px;
+  height: 440px;
+}
+
+.card-settings-item-row {
+  margin-top: 20px;
+}
+
+.add-new-card-number{
+    
+}
+
+.settings-icon-div-puple{
+    background: #E7EDFF;
+    color: #396AFF;
+    font-size: 25px;
+}
+
+.settings-icon-div-pink{
+    background: #FFE0EB;
+    font-size: 25px;
+    color: #FF82AC;
+}
+
+.settings-icon-div-green{
+    background: #DCFAF8;
+    font-size: 25px;
+    color: #16DBCC;
+}
+
+
