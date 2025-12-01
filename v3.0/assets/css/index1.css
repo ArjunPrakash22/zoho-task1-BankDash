@@ -354,7 +354,7 @@ html,body{
 
 .card__holder--third,
 .card__validity--third,
-.main-content__balance--third {
+.card__balance--third {
   color: rgb(113, 142, 191);
 }
 
@@ -434,7 +434,7 @@ html,body{
   font-weight: 500;
 }
 
-.main-content__points {
+.statistics__points {
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -442,15 +442,15 @@ html,body{
   border-radius: 50%;
 }
 
-.main-content__points--pink{
+.statistics__points--pink{
   background: rgb(255, 130, 172);
 }
 
-.main-content__points--green {
+.statistics__points--green {
   background: rgb(22, 219, 204);
 }
 
-.main-content__points--yellow {
+.statistics__points--yellow {
   background: rgb(255, 187, 56);
 }
 
@@ -481,26 +481,26 @@ html,body{
   margin-top: 0px;
 }
 
-.cards__list-item{
+.cards-list__item{
   display: inline-block;
   vertical-align: middle;
   font-weight: 500;
   width: 14%;
 }
 
-.cards__list-item:first-child{
+.cards-list__item:first-child{
     margin-left: 0px;
     width: 10%;
     /* padding: 16px 0px 16px 16px; */
 }
 
-.cards__list-item:nth-child(2){
+.cards-list__item:nth-child(2){
 
 }
 
-.cards__list-item:nth-child(4),
-.cards__list-item:nth-child(5),
-.cards__list-item:nth-child(6){
+.cards-list__item:nth-child(4),
+.cards-list__item:nth-child(5),
+.cards-list__item:nth-child(6){
     width: 20%;
 }
 
@@ -518,7 +518,7 @@ html,body{
   margin-top: 7px;
 }
 
-.cards__list-item:nth-child(5) .cards__list-field-value{
+.cards-list__item:nth-child(5) .cards__list-field-value{
   max-width:100px;
   overflow-wrap:break-word;
   white-space:normal;
@@ -530,18 +530,18 @@ html,body{
   font-size: 0.875rem;
 }
 
-.cards__list-item:first-child .icon-credit {
+.cards-list__item:first-child .icon-credit {
   font-size: 1.625rem;
   border-radius: 20px;
   padding: 14px;
 }
 
-.cards__list-item--blue .icon-credit{
+.cards-list__item--blue .icon-credit{
   background: rgb(231, 237, 255);
   color: rgb(57, 106, 255);
 }
 
-.cards__list-item--pink .icon-credit {
+.cards-list__item--pink .icon-credit {
   color: rgb(255, 130, 172) ;
   background: rgb(255, 224, 235);
 
@@ -550,13 +550,13 @@ html,body{
 .main-content__cards-item--yellow {
 }
 
-.cards__list-item--yellow .icon-credit {
+.cards-list__item--yellow .icon-credit {
   color: rgb(255, 187, 56);
     background: rgb(255, 245, 217);
 }
 
 .main-content__row3{
-  margin-top: 24px;
+  /* margin-top: 24px; */
   overflow: hidden;
 }
 
@@ -570,11 +570,13 @@ html,body{
 .add-card{
     width: 63%;
     float: left;
+    margin-top: 24px;
 }
 
 .card-settings{
     width: 34%;
     float: right;
+    margin-top: 24px;
 }
 
 .add-card__form-group {
@@ -599,12 +601,10 @@ html,body{
 .add-card__text{
   color: rgb(113, 142, 191);
   font-size: 1rem;
-  line-height: 28px;
+  line-height: 1.75rem;
 }
 
-.add-card__form {
-  margin-top: 30px;
-}
+
 
 .add-card__input-group {
   display: inline-block;
@@ -612,8 +612,8 @@ html,body{
   width: 50%;
 }
 
-.add-card__input-inner-group:nth-child(2) {
-  margin-top: 22px;
+.add-card__input-inner-group {
+  margin-top: 24px;
 }
 
 .add-card__input-group:nth-child(2) {
@@ -656,21 +656,21 @@ html,body{
   border-radius: 24px;
 }
 
-.card-settings-item{
+.card-settings__item{
   cursor:pointer;
   margin-top: 20px;
 }
 
-.card-settings-item:first-child{
+.card-settings__item:first-child{
   margin-top: 0px;
 }
 
-.card-settings-icon, .card-settings__text-group {
+.card-settings__icon, .card-settings__text-group {
   display: inline-block;
   vertical-align: middle;
 }
 
-.card-settings-icon {
+.card-settings__icon {
   padding: 14px 16px 14px 16px;
   background: rgb(255, 245, 217);
   text-align: center;
@@ -679,28 +679,28 @@ html,body{
 }
 
 
-.card-settings-icon .icon-credit {
+.card-settings__icon .icon-credit {
   color: rgb(255, 187, 56);
   font-size: 1.5rem;
 }
 
-.card-settings-item:first-child{
+.card-settings__item:first-child{
   margin-top: 0px;
 }
 
-.card-settings-icon--purple {
+.card-settings__icon--purple {
   background: rgb(231, 237, 255);
   color: rgb(57, 106, 255);
   font-size: 1.5rem;
 }
 
-.card-settings-icon--pink {
+.card-settings__icon--pink {
   background: rgb(255, 224, 235);
   font-size: 1.5rem;
   color: rgb(255, 130, 172);
 }
 
-.card-settings-icon--green {
+.card-settings__icon--green {
   background: rgb(220, 250, 248);
   font-size: 1.5rem;
   color: rgb(22, 219, 204);
@@ -726,17 +726,17 @@ html,body{
     .main-content__section{
         max-width: 790px;
     }
-    .cards__list-item:first-child{
+    .cards-list__item:first-child{
         width: 20%;
     }
-    .cards__list-item:nth-child(2){
+    .cards-list__item:nth-child(2){
         width: 30%;
     }
-    .cards__list-item{
+    .cards-list__item{
         width: 20%;
     }
-    .cards__list-item:nth-child(4),
-    .cards__list-item:nth-child(5){
+    .cards-list__item:nth-child(4),
+    .cards-list__item:nth-child(5){
         display: none;
     }
     .cards__list-sec{
@@ -747,7 +747,22 @@ html,body{
     }
 
     .statistics{
-        width: 36%;
         min-width: 300px;
+    }
+
+    .add-card{
+        width:50%;    
+    }
+  
+    .add-card__input-group{
+      width:100%;
+    }
+
+    .card-settings{
+      width:48%;
+    }
+
+    .add-card__text-group{
+      max-width:400px;
     }
 }
