@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,10 +12,8 @@
   <body>
 
       <nav class="navbar">
-            <header class="navbar__header">
             <img class="navbar__img" src="./assets//images/myfavico_icon.png" alt="logo-img"/>
             <h1 class="navbar__head">BankDash.</h1>
-            </header>
             <ul class="navbar__list">
                 <li><a class="navbar__item" href="./index.html">
                     <i class="navbar__icon icon-home"></i>
@@ -56,60 +54,53 @@
         </ul>
     </nav>
 
-
-
-
-
-
-      
-
-    <main class="main-content">
-        <nav class="topnav">
-            <h3 class="topnav__head">Credit Cards</h3>
-            <div class="topnav__menu">
-                <div class="topnav__search-bar">
-                    <i class="topnav__search-icon icon-magnifying"></i>
-                    <input class="topnav__search-box" type="text" placeholder="Search for something"/>
+    <div class="main-content">
+        <header class="head-sec">
+            <h2 class="head-sec__title">Credit Cards</h2>
+            <div class="head-sec__option">
+                <div class="head-sec__search-bar">
+                    <label for="search" class="head-sec__search-label">Search</label>
+                    <i class="head-sec__search-icon icon-magnifying"></i>
+                    <input id="search" class="head-sec__search-box" type="text" placeholder="Search for something"/>
                 </div>
-                <ul class="topnav__list">
-                    <li class="topnav__item">
-                        <a class="topnav__link" href="./index.html">
-                            <i class="topnav__icon icon-settings-1"></i>
+                <ul class="head-sec__list">
+                    <li class="head-sec__item">
+                        <a class="head-sec__link" href="./index.html" aria-label="settings">
+                            <i class="head-sec__icon icon-settings-1"></i>
                         </a>
                     </li>
-                    <li class="topnav__item">
-                        <a class="topnav__link" href="./index.html">
-                            <i class="topnav__icon icon-notification"></i>
+                    <li class="head-sec__item">
+                        <a class="head-sec__link" href="./index.html" aria-label="notification">
+                            <i class="head-sec__icon icon-notification"></i>
                         </a>
                     </li>
-                    <li class="topnav__item">
-                        <a class="topnav__link" href="./index.html">
-                            <i class="topnav__icon icon-user"></i>
+                    <li class="head-sec__item">
+                        <a class="head-sec__link" href="./index.html" aria-label="user profile">
+                            <i class="head-sec__icon icon-user"></i>
+                        </a>
                     </li>
-                    </a>
 
                 </ul>
             </div>
-        </nav>
+         </header>
 
-        <section class="main-content__section">
-            <div class="main-content__row1">
-                <h3 class="main-content__subhead">My Cards</h3>
-            <div class="cards__wrapper">
-            <section class="main-content__cards">
 
-             <div class="card">
-              <div class="card__layer1">
-                <div class="card__innerlayer1">
+        <main class="main-content__wrapper">
+            <section class="card">
+            <h3 class="card__title">My Cards</h3>
+            <div class="card__wrapper">
+             <div class="card__card-layer card__card-layer--one">
+              <div class="card__layer--one">
+                <div class="card__innerlayer--one">
                     <div class="card__balance">Balance<span class="card__balance-amount">$5,756</span></div>
                     <div class="card__chip"><img src="./assets/images/chip_card.png" alt="chip-img"/></div>
                 </div>
-                <div class="card__innerlayer2">
+                <div class="card__innerlayer--two">
                     <div class="card__holder">CARD HOLDER<span class="card__holder-name">Eddy Cusuma</span></div>
                     <div class="card__validity">VALID THRU<span class="card__valid-date">12/22</span></div>
                 </div>
               </div>
-                <div class="card__layer3">
+                <div class="card__layer--two">
                     <div class="card__number">3778 **** **** 1234</div>
                     <div class="card__icon">
                         <span class="card__icon--dot1"></span>
@@ -117,19 +108,18 @@
                     </div>
                 </div>
             </div>
-
-            <div class="card">
-                <div class="card__layer1">
-                <div class="card__innerlayer1">
+            <div class="card__card-layer card__card-layer--two">
+                <div class="card__layer--one">
+                <div class="card__innerlayer--one">
                     <div class="card__balance">Balance<span class="card__balance-amount">$5,756</span></div>
                     <div class="card__chip"><img src="./assets/images/chip_card.png" alt="chip-img"/></div>
                 </div>
-                <div class="card__innerlayer2">
+                <div class="card__innerlayer--two">
                     <div class="card__holder">CARD HOLDER<span class="card__holder-name">Eddy Cusuma</span></div>
                     <div class="card__validity">VALID THRU<span class="card__valid-date">12/22</span></div>
                 </div>
                 </div>
-                <div class="card__layer3">
+                <div class="card__layer--two">
                     <div class="card__number">3778 **** **** 1234</div>
                     <div class="card__icon">
                         <span class="card__icon--dot1"></span>
@@ -138,34 +128,33 @@
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card__layer1">
-                <div class="card__innerlayer1">
+            <div class="card__card-layer card__card-layer--three">
+                <div class="card__layer--one">
+                <div class="card__innerlayer--one">
                     <div class="card__balance card__balance--third">Balance<span class="card__balance-amount card__balance-amount--third">$5,756</span></div>
                     <div class="card__chip"><img src="./assets/images/chip-card-dark.png" alt="chip-img"/></div>
                 </div>
-                <div class="card__innerlayer2">
+                <div class="card__innerlayer--two">
                     <div class="card__holder card__holder--third">CARD HOLDER<span class="card__holder-name card__holder-name--third">Eddy Cusuma</span></div>
                     <div class="card__validity card__validity--third ">VALID THRU<span class="card__valid-date card__valid-date--third">12/22</span></div>
                 </div>
                 </div>
-                <div class="card__layer3 card__layer3--third">
+                <div class="card__layer--two card__layer--black">
                     <div class="card__number card__number--third">3778 **** **** 1234</div>
                     <div class="card__icon">
-                        <span class="card__icon--dot1 card__icon--dot3"></span>
-                        <span class="card__icon--dot2 card__icon--dot3"></span>
+                        <span class="card__icon--dot1 card__icon--black"></span>
+                        <span class="card__icon--dot2 card__icon--black"></span>
                     </div>
                 </div>
             </div>
-            </section>
             </div>
-            </div>
+          </section>
 
-            <div class="main-content__row2">
-                    <section class="main-content__row2-section statistics">
-                        <p class="main-content__subhead">Card Expense Statistics</p>
-                        <div class="statistics__box">
-                            <div class="statistics__progress-bar"><svg xmlns="http://www.w3.org/2000/svg" width="189" height="187" viewBox="0 0 189 187" fill="none">
+
+            <section class="statistics">
+                <h3 class="statistics__title">Card Expense Statistics</h3>
+                <div class="statistics__box">
+                    <div class="statistics__progress-bar"><svg xmlns="http://www.w3.org/2000/svg" width="189" height="187" viewBox="0 0 189 187" fill="none">
   <path opacity="0.83" d="M147.224 56.6328C133.573 42.7176 114.618 34.0219 93.5921 33.8212C72.5661 33.6204 53.442 41.9674 39.5373 55.6079C25.6327 69.2484 16.9265 88.214 16.7257 109.24C16.525 130.266 24.872 149.39 38.5124 163.295C52.1529 177.199 71.1186 185.906 92.1446 186.106C113.171 186.307 132.295 177.96 146.199 164.32C160.115 150.669 168.81 131.714 169.011 110.688C169.212 89.6616 160.865 70.548 147.224 56.6328Z" fill="url(#paint0_radial_1_170)" fill-opacity="0.5"/>
   <path d="M7.91418 99.6777C7.70287 121.676 16.4302 141.687 30.7152 156.247C45.0002 170.807 64.8323 179.915 86.8303 180.126L87.5911 100.449L7.91418 99.6777Z" fill="#FFBB38"/>
   <path d="M39.2521 99.9736C39.1253 113.329 44.4188 125.469 53.0933 134.302C61.7573 143.135 73.7918 148.661 87.147 148.788L87.6119 100.439L39.2521 99.9736Z" fill="#FFB11F"/>
@@ -194,7 +183,7 @@
   </defs>  
 </svg></div>
                         <div class="statistics__bank-names">
-                            <div class="statistics__bankname-col">
+                                <div class="statistics__bankname-col">
                                     <p class="statistics__bankname"><span class="statistics__points"></span> DBL Bank</p>
                                     <p class="statistics__bankname"><span class="statistics__points statistics__points--green"></span> ADM Bank</p>
                                 </div>
@@ -204,46 +193,41 @@
                                 </div>
                         </div>
                         </div>
-                    </section>
+            </section>
 
-                    <section class="main-content__row2-section cards__list-sec">
-                        <h3 class="main-content__subhead main-content__subhead2">Card List</h3>
-                        <div class="cards__scroll-wrapper">
+            <section class="cards__list-sec">
+                        <h3 class="cards__list--title">Card List</h3>
                         <ul class="cards__list">
                             <li class="cards-list__row">
                                 <div class="cards-list__item cards-list__item--blue"><i class="icon-credit"></i></div>
-                                <div class="cards-list__item"><label class="cards__list-field-label">Card Type<span class="cards__list-field-value">Secondary</span></label></div>
-                                <div class="cards-list__item"><label class="cards__list-field-label">Bank<span class="cards__list-field-value">DBL Bank</span></label></div>
-                                <div class="cards-list__item"><label class="cards__list-field-label">Card Number<span class="cards__list-field-value">**** **** 5600</span></label></div>
-                                <div class="cards-list__item"><label class="cards__list-field-label">Namain Card<span class="cards__list-field-value">William</span></label></div>
+                                <div class="cards-list__item"><span class="cards__list-field">Card Type</span><span class="cards__list-field-value">Secondary</span></div>
+                                <div class="cards-list__item"><span class="cards__list-field">Bank</span><span class="cards__list-field-value">DBL Bank</span></div>
+                                <div class="cards-list__item card-list__item--hide"><span class="cards__list-field">Card Number</span><span class="cards__list-field-value">**** **** 5600</span></div>
+                                <div class="cards-list__item card-list__item--hide"><span class="cards__list-field">Namain Card</span><span class="cards__list-field-value">William</span></div>
                                 <div class="cards-list__item"><a class="cards__list-link" href="./index.html">View Details</a></div>
                             </li>
                             <li class="cards-list__row">
                                 <div class="cards-list__item cards-list__item--pink"><i class="icon-credit"></i></div>
-                                <div class="cards-list__item"><label class="cards__list-field-label">Card Type<span class="cards__list-field-value">Secondary</span></label></div>
-                                <div class="cards-list__item"><label class="cards__list-field-label">Bank<span class="cards__list-field-value">DBL Bank</span></label></div>
-                                <div class="cards-list__item"><label class="cards__list-field-label">Card Number<span class="cards__list-field-value">**** **** 5600</span></label></div>
-                                <div class="cards-list__item"><label class="cards__list-field-label">Namain Card<span class="cards__list-field-value">William</span></label></div>
+                                <div class="cards-list__item"><span class="cards__list-field">Card Type</span><span class="cards__list-field-value">Secondary</span></div>
+                                <div class="cards-list__item"><span class="cards__list-field">Bank</span><span class="cards__list-field-value">DBL Bank</span></div>
+                                <div class="cards-list__item card-list__item--hide"><span class="cards__list-field">Card Number</span><span class="cards__list-field-value">**** **** 5600</span></div>
+                                <div class="cards-list__item card-list__item--hide"><span class="cards__list-field">Namain Card</span><span class="cards__list-field-value">William</span></div>
                                 <div class="cards-list__item"><a class="cards__list-link" href="./index.html">View Details</a></div>
                             </li>
                             <li class="cards-list__row">
                                 <div class="cards-list__item cards-list__item--yellow"><i class="icon-credit"></i></div>
-                                <div class="cards-list__item"><label class="cards__list-field-label">Card Type<span class="cards__list-field-value">Secondary</span></label></div>
-                                <div class="cards-list__item"><label class="cards__list-field-label">Bank<span class="cards__list-field-value">DBL Bank</span></label></div>
-                                <div class="cards-list__item"><label class="cards__list-field-label">Card Number<span class="cards__list-field-value">**** **** 5600</span></label></div>
-                                <div class="cards-list__item"><label class="cards__list-field-label">Namain Card<span class="cards__list-field-value">William</span></label></div>
+                                <div class="cards-list__item"><span class="cards__list-field">Card Type</span><span class="cards__list-field-value">Secondary</span></div>
+                                <div class="cards-list__item"><span class="cards__list-field">Bank</span><span class="cards__list-field-value">DBL Bank</span></div>
+                                <div class="cards-list__item card-list__item--hide"><span class="cards__list-field">Card Number</span><span class="cards__list-field-value">**** **** 5600</span></div>
+                                <div class="cards-list__item card-list__item--hide"><span class="cards__list-field">Namain Card</span><span class="cards__list-field-value">William</span></div>
                                 <div class="cards-list__item"><a class="cards__list-link" href="./index.html">View Details</a></div>
                             </li>
                         </ul>
-                        </div>
     
-                    </section>               
-            </div>
+            </section>               
 
-            <div class="main-content__row3">
-                <section class="add-card">
-                    <article class="add-card__group">
-                    <h3 class="main-content__subhead">Add New Card</h3>
+            <section class="add-card">
+                <h3 class="add-card__title">Add New Card</h3>
                     <div class="add-card__form-group">
                         <div class="add-card__text-group">
                         <p class="add-card__text">
@@ -253,39 +237,38 @@
                         <form class="add-card__form">
                             <div class="add-card__input-group">
                                 <div class="add-card__input-inner-group">
-                                <label class="add-card__label">Card Type</label>
-                                <input class="add-card__input-field" type="text" placeholder="Classic">
+                                <label for="card-type" class="add-card__label">Card Type</label>
+                                <input id="card-type" class="add-card__input-field" type="text" placeholder="Classic">
                                 </div>
                                 <div class="add-card__input-inner-group">
-                                <label class="add-card__label">Card Number</label>
-                                <input class="add-card__input-field" type="text" placeholder="**** **** ****">
+                                <label for="card-number" class="add-card__label">Card Number</label>
+                                <input id="card-number" class="add-card__input-field" type="text" placeholder="**** **** ****">
                                 </div>
                             </div>
                             <div class="add-card__input-group">
                                 <div class="add-card__input-inner-group">
-                                <label class="add-card__label">Name On Card</label>
-                                <input class="add-card__input-field" type="text" placeholder="My Cards">
+                                <label for="name-on-card" class="add-card__label">Name On Card</label>
+                                <input id="name-on-card" class="add-card__input-field" type="text" placeholder="My Cards">
                                 </div>
                                 <div class="add-card__input-inner-group">
-                                <label class="add-card__label">Expiration Date</label>
-                                <input class="add-card__input-field" type="text" placeholder="25 January 2025" onfocus="(this.type='date')">
+                                <label for="expiry-date" class="add-card__label">Expiration Date</label>
+                                <input id="expiry-date" class="add-card__input-field" type="text" placeholder="25 January 2025" onfocus="(this.type='date')">
                                 </div>
                             </div>
                             <button class="add-card__btn">Add Card</button>
                         </form>
                         </div>
-                    </article>
-                </section>
+            </section>
 
-                <aside class="card-settings">
-                    <p class="main-content__subhead main-content__subhead2">Card Setting</p>
+            <section class="card-settings">
+                    <h3 class="card-settings__title">Card Setting</h3>
                     <div class="card-settings__sec">
                         <div class="card-settings__item">
                             <div class="card-settings__icon">
                                 <i class="icon-credit"></i>
                             </div>
                             <div class="card-settings__text-group">
-                                <p class="card-settings__text">Block Card<span class="card-settings__text2">Instantly block your card</span></p>
+                                <p class="card-settings__text">Block Card<span class="card-settings__text--two">Instantly block your card</span></p>
                             </div>
                         </div>
                         <div class="card-settings__item">
@@ -293,7 +276,7 @@
                                 <i class="icon-padlock"></i>
                             </div>
                             <div class="card-settings__text-group">
-                                <p class="card-settings__text">Change Pincode<span class="card-settings__text2">Choose another pin code</span></p>
+                                <p class="card-settings__text">Change Pincode<span class="card-settings__text--two">Choose another pin code</span></p>
                             </div>
                         </div>
                         <div class="card-settings__item">
@@ -301,7 +284,7 @@
                                 <i class="icon-g"></i>
                             </div>
                             <div class="card-settings__text-group">
-                                <p class="card-settings__text">Add to Google Pay<span class="card-settings__text2">Withdraw without any card</span></p>
+                                <p class="card-settings__text">Add to Google Pay<span class="card-settings__text--two">Withdraw without any card</span></p>
                             </div>
                         </div>
                         <div class="card-settings__item">
@@ -309,7 +292,7 @@
                                 <i class="icon-apple"></i>
                             </div>
                             <div class="card-settings__text-group">
-                                <p class="card-settings__text">Add to Apple Pay<span class="card-settings__text2">Withdraw without any card</span></p>
+                                <p class="card-settings__text">Add to Apple Pay<span class="card-settings__text--two">Withdraw without any card</span></p>
                             </div>
                         </div>
                         <div class="card-settings__item">
@@ -317,15 +300,14 @@
                                 <i class="icon-apple"></i>
                             </div>
                             <div class="card-settings__text-group card-settings-inner-div">
-                                <p class="card-settings__text">Add to Apply Store<span class="card-settings__text2">Withdraw without any card</span></p>
+                                <p class="card-settings__text">Add to Apply Store<span class="card-settings__text--two">Withdraw without any card</span></p>
                             </div>
                         </div>
                     </div>
-                </aside>
-            </div>
-        </section>
+            </section>
+        </main>
 
         
-    </main>
+    </div>
   </body>
 </html>
