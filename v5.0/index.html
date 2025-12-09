@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BankDash.</title>
+    <link rel="stylesheet" href="./assets/css/bankdash.css">
+
+    <link rel="stylesheet" href="./assets/css/index.css" type="text/css"/>
+    <link rel="icon" href="./assets/images/myfavico_icon.png" type="img/png" />
+  </head>
+  <body>
+    <input type="checkbox" id="theme-switch" aria-label="Toggle dark mode" hidden>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true"/>
+    <nav class="navbar">
+        <div class="navbar__head-sec">
+            <img class="navbar__img" src="./assets//images/myfavico_icon.png" alt="logo-img"/>
+            <h1 class="navbar__head">BankDash.</h1>
+        </div>
+        <label for="nav-toggle" class="navbar__close-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59 7.11 5.7A1 1 0 0 0 5.7 7.11L10.59 12l-4.9 4.89a1 1 0 1 0 1.41 1.41L12 13.41l4.89 4.9a1 1 0 0 0 1.41-1.41L13.41 12l4.9-4.89a1 1 0 0 0-.01-1.4z"/>
+</svg>
+</label>
+        <ul class="navbar__list">
+            <li><a class="navbar__item" href="./index.html">
+                    <i class="navbar__icon icon-home"></i>
+                    Dashboard
+            </a></li>
+            <li><a class="navbar__item" href="./index.html">
+                    <i class="navbar__icon icon-transfer"></i>
+                    Transactions
+            </a></li>
+            <li><a class="navbar__item" href="./index.html">
+                    <i class="navbar__icon icon-user-m"></i>
+                    Accounts
+            </a></li>
+            <li><a class="navbar__item" href="./index.html">
+                    <i class="navbar__icon icon-investment"></i>
+                    Investments
+            </a></li>
+            <li><a class="navbar__item navbar__item--active" href="./index.html">
+                   <i class="navbar__icon icon-credit"></i>
+                    Credit Cards
+            </a></li>
+            <li><a class="navbar__item" href="./index.html">
+                    <i class="navbar__icon icon-loan"></i>
+                    Loans
+            </a></li>
+            <li><a class="navbar__item" href="./index.html">
+                    <i class="navbar__icon icon-service"></i>
+                    Services
+            </a></li>
+            <li><a class="navbar__item" href="./index.html">
+                    <i class="navbar__icon icon-econometrics"></i>
+                    My Previleges
+            </a></li>
+            <li><a class="navbar__item" href="./index.html">
+                    <i class="navbar__icon icon-settings-m"></i>
+                    Setting
+            </a></li>
+        </ul>
+        <label for="theme-switch" class="dark-toggle-label" aria-label="Dark Mode Toggle"><span class="slider"></span>Dark Mode</label>
+
+    </nav>
+
+    <div class="main-content">
+        <header class="head-sec">
+            <label for="nav-toggle" class="head-sec__menu"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M18 13C18 13.5523 17.4801 14 16.8387 14L1.16129 14C0.519929 14 5.44107e-07 13.5523 5.68248e-07 13C5.92389e-07 12.4477 0.519929 12 1.16129 12L16.8387 12C17.4801 12 18 12.4477 18 13Z" fill="#343C6A"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M18 7C18 7.55229 17.5523 8 17 8L1 8C0.447716 8 5.44107e-07 7.55228 5.68248e-07 7C5.92389e-07 6.44772 0.447716 6 1 6L17 6C17.5523 6 18 6.44772 18 7Z" fill="#343C6A"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M18 0.999999C18 1.55228 17.4801 2 16.8387 2L1.16129 2C0.519929 2 5.44107e-07 1.55229 5.68248e-07 1C5.92389e-07 0.447719 0.519929 4.73148e-06 1.16129 4.58071e-06L16.8387 7.36043e-07C17.4801 5.2566e-07 18 0.447715 18 0.999999Z" fill="#343C6A"/>
+</svg></label>
+            <h2 class="head-sec__title">Credit Cards</h2>
+            <div class="head-sec__option">
+                <div class="head-sec__search-bar">
+                    <form type="search" aria-label="Search">
+                    <i class="head-sec__search-icon icon-magnifying"></i>
+                    <input class="head-sec__search-box" type="search" placeholder="Search for something"/>
+                    </form>
+                </div>
+                <ul class="head-sec__list">
+                    <li class="head-sec__item head-sec__item--hide">
+                        <a class="head-sec__link" href="./index.html" aria-label="settings">
+                            <i class="head-sec__icon icon-settings-1"></i>
+                        </a>
+                    </li>
+                    <li class="head-sec__item head-sec__item--hide">
+                        <a class="head-sec__link" href="./index.html" aria-label="notification">
+                            <i class="head-sec__icon icon-notification"></i>
+                        </a>
+                    </li>
+                    <li class="head-sec__item head-sec__profile">
+                        <a class="head-sec__link head-sec__profile-link" href="./index.html" aria-label="user profile">
+                            <i class="head-sec__icon icon-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+         </header>
+
+
+        <main class="main-content__wrapper">
+            <section class="card" aria-labelledby="card-title">
+            <h3 id="card-title" class="card__title">My Cards</h3>
+            <div class="card__wrapper">
+                <div class="card__element card__element--one">
+                    <div class="card__layer--one">
+                        <div class="card__innerlayer--one">
+                            <div class="card__balance">Balance<span class="card__balance-amount">$5,756</span></div>
+                            <div class="card__chip"><img src="./assets/images/chip_card.png" alt="chip-img"/></div>
+                        </div>
+                        <div class="card__innerlayer--two">
+                            <div class="card__holder">CARD HOLDER<span class="card__holder-name">Eddy Cusuma</span></div>
+                            <div class="card__validity">VALID THRU<span class="card__valid-date">12/22</span></div>
+                        </div>
+                    </div>
+                    <div class="card__layer--two">
+                        <div class="card__number">3778 **** **** 1234</div>
+                        <div class="card__icon">
+                            <span class="card__icon--dot"></span>
+                            <span class="card__icon--right"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card__element card__element--two">
+                <div class="card__layer--one">
+                  <div class="card__innerlayer--one">
+                    <div class="card__balance">Balance<span class="card__balance-amount">$5,756</span></div>
+                    <div class="card__chip"><img src="./assets/images/chip_card.png" alt="chip-img"/></div>
+                  </div>
+                  <div class="card__innerlayer--two">
+                    <div class="card__holder">CARD HOLDER<span class="card__holder-name">Eddy Cusuma</span></div>
+                    <div class="card__validity">VALID THRU<span class="card__valid-date">12/22</span></div>
+                </div>
+                </div>
+                <div class="card__layer--two">
+                    <div class="card__number">3778 **** **** 1234</div>
+                    <div class="card__icon">
+                        <span class="card__icon--dot"></span>
+                        <span class="card__icon--right"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card__element card__element--three">
+                <div class="card__layer--one">
+                  <div class="card__innerlayer--one">
+                    <div class="card__balance card__balance--third">Balance<span class="card__balance-amount card__balance-amount--third">$5,756</span></div>
+                    <div class="card__chip"><img src="./assets/images/chip-card-dark.png" alt="chip-img"/></div>
+                  </div>
+                  <div class="card__innerlayer--two">
+                    <div class="card__holder card__holder--third">CARD HOLDER<span class="card__holder-name card__holder-name--third">Eddy Cusuma</span></div>
+                    <div class="card__validity card__validity--third ">VALID THRU<span class="card__valid-date card__valid-date--third">12/22</span></div>
+                </div>
+                </div>
+                <div class="card__layer--two card__layer--black">
+                    <div class="card__number card__number--third">3778 **** **** 1234</div>
+                    <div class="card__icon">
+                        <span class="card__icon--dot card__icon--black"></span>
+                        <span class="card__icon--right card__icon--black"></span>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </section>
+
+            <div class="main-content__group">
+            <section class="statistics" aria-labelledby="statistics-title">
+                <h3 id="statistics-title" class="statistics__title">Card Expense Statistics</h3>
+                <div class="statistics__box">
+                    <div class="statistics__progress-bar"><svg xmlns="http://www.w3.org/2000/svg" width="189" height="187" viewBox="0 0 189 187" fill="none">
+  <path opacity="0.83" d="M147.224 56.6328C133.573 42.7176 114.618 34.0219 93.5921 33.8212C72.5661 33.6204 53.442 41.9674 39.5373 55.6079C25.6327 69.2484 16.9265 88.214 16.7257 109.24C16.525 130.266 24.872 149.39 38.5124 163.295C52.1529 177.199 71.1186 185.906 92.1446 186.106C113.171 186.307 132.295 177.96 146.199 164.32C160.115 150.669 168.81 131.714 169.011 110.688C169.212 89.6616 160.865 70.548 147.224 56.6328Z" fill="url(#paint0_radial_1_170)" fill-opacity="0.5"/>
+  <path d="M7.91418 99.6777C7.70287 121.676 16.4302 141.687 30.7152 156.247C45.0002 170.807 64.8323 179.915 86.8303 180.126L87.5911 100.449L7.91418 99.6777Z" fill="#FFBB38"/>
+  <path d="M39.2521 99.9736C39.1253 113.329 44.4188 125.469 53.0933 134.302C61.7573 143.135 73.7918 148.661 87.147 148.788L87.6119 100.439L39.2521 99.9736Z" fill="#FFB11F"/>
+  <path d="M26.2455 37.9101C10.2383 53.6109 0.232448 75.4188 0 99.6039L87.6013 100.439L88.436 12.8374C64.2402 12.6049 42.2527 22.2093 26.2455 37.9101Z" fill="#4C78FF"/>
+  <path d="M53.7382 65.9201C44.9052 74.584 39.3792 86.6185 39.2524 99.9737L87.6017 100.439L88.0665 52.0894C74.7113 51.9626 62.5712 57.2561 53.7382 65.9201Z" fill="#3464F3"/>
+  <path d="M159.301 30.0915C141.297 11.7386 116.298 0.264146 88.5526 0L87.5911 100.439L188.03 101.4C188.305 73.6544 177.306 48.4337 159.301 30.0915Z" fill="#16DBCC"/>
+  <path d="M122.11 66.5751C113.446 57.7421 101.411 52.2161 88.056 52.0894L87.5911 100.439L135.94 100.903C136.078 87.5483 130.784 75.4081 122.11 66.5751Z" fill="#1EC6B8"/>
+  <path d="M87.6015 100.438L86.9147 172.075C106.694 172.265 124.677 164.415 137.768 151.577C150.859 138.74 159.048 120.904 159.227 101.125L87.6015 100.438Z" fill="#FF82AC"/>
+  <path opacity="0.08" d="M87.5274 108.225L87.6013 100.438L7.92443 99.6777C7.9033 102.309 8.00896 104.908 8.23084 107.465L87.5274 108.225Z" fill="url(#paint1_linear_1_170)"/>
+  <path d="M87.6015 100.438L87.1366 148.788C100.492 148.914 112.632 143.621 121.465 134.957C130.298 126.293 135.824 114.259 135.951 100.903L87.6015 100.438Z" fill="#FF6195"/>
+  <path opacity="0.83" d="M119.658 83.6392C113.445 77.3102 104.824 73.3481 95.2511 73.253C85.6785 73.1579 76.9828 76.9616 70.6539 83.1637C64.325 89.3764 60.3628 97.9981 60.2677 107.571C60.1726 117.143 63.9763 125.839 70.1784 132.168C76.3911 138.497 85.0129 142.459 94.5855 142.554C104.158 142.649 112.854 138.846 119.183 132.643C125.512 126.431 129.474 117.809 129.569 108.236C129.664 98.6638 125.871 89.9681 119.658 83.6392Z" fill="url(#paint2_radial_1_170)" fill-opacity="0.5"/>
+  <path d="M112.336 76.1689C106.123 69.84 97.5015 65.8778 87.9288 65.7827C78.3562 65.6877 69.6605 69.4913 63.3316 75.6935C57.0027 81.9062 53.0405 90.5279 52.9454 100.101C52.8503 109.673 56.654 118.369 62.8561 124.698C69.0688 131.027 77.6906 134.989 87.2632 135.084C96.8358 135.179 105.532 131.375 111.86 125.173C118.189 118.961 122.152 110.339 122.247 100.766C122.342 91.1936 118.549 82.4979 112.336 76.1689Z" fill="white"/>
+  <defs>
+    <radialGradient id="paint0_radial_1_170" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(92.8643 109.964) rotate(0.544294) scale(76.1507)">
+      <stop/>
+      <stop offset="1" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="paint1_linear_1_170" x1="47.6704" y1="109.401" x2="47.7574" y2="100.238" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white"/>
+      <stop offset="1"/>
+    </linearGradient>
+    <radialGradient id="paint2_radial_1_170" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(94.926 107.903) rotate(0.544294) scale(34.6508 34.6508)">
+      <stop/>
+      <stop offset="1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>  
+</svg></div>
+                        <div class="statistics__bank-names">
+                                <div class="statistics__bankname-col">
+                                    <p class="statistics__bankname"> DBL Bank</p>
+                                    <p class="statistics__bankname statistics__bankname--green"> ADM Bank</p>
+                                </div>
+                                <div class="statistics__bankname-col">
+                                    <p class="statistics__bankname statistics__bankname--pink"> BRC Bank</p>
+                                    <p class="statistics__bankname statistics__bankname--yellow"> MCP Bank</p>
+                                </div>
+                        </div>
+                        </div>
+            </section>
+
+            <section class="cards__list-sec" aria-labelledby="cards-list-title">
+                        <h3 id="cards-list-title" class="cards__list--title">Card List</h3>
+                        <ul class="cards__list">
+                            <li class="cards-list__row">
+                                <div class="cards-list__item cards-list__item--blue"><i class="icon-credit"></i></div>
+                                <div class="cards-list__item"><span class="cards__list-field">Card Type</span><span class="cards__list-field-value">Secondary</span></div>
+                                <div class="cards-list__item"><span class="cards__list-field">Bank</span><span class="cards__list-field-value">DBL Bank</span></div>
+                                <div class="cards-list__item card-list__item--hide"><span class="cards__list-field">Card Number</span><span class="cards__list-field-value">**** **** 5600</span></div>
+                                <div class="cards-list__item card-list__item--hide"><span class="cards__list-field">Name in Card</span><span class="cards__list-field-value">William</span></div>
+                                <div class="cards-list__item"><a class="cards__list-link" href="./index.html">View Details</a></div>
+                            </li>
+                            <li class="cards-list__row">
+                                <div class="cards-list__item cards-list__item--pink"><i class="icon-credit"></i></div>
+                                <div class="cards-list__item"><span class="cards__list-field">Card Type</span><span class="cards__list-field-value">Secondary</span></div>
+                                <div class="cards-list__item"><span class="cards__list-field">Bank</span><span class="cards__list-field-value">DBL Bank</span></div>
+                                <div class="cards-list__item card-list__item--hide"><span class="cards__list-field">Card Number</span><span class="cards__list-field-value">**** **** 5600</span></div>
+                                <div class="cards-list__item card-list__item--hide"><span class="cards__list-field">Name in Card</span><span class="cards__list-field-value">William</span></div>
+                                <div class="cards-list__item"><a class="cards__list-link" href="./index.html">View Details</a></div>
+                            </li>
+                            <li class="cards-list__row">
+                                <div class="cards-list__item cards-list__item--yellow"><i class="icon-credit"></i></div>
+                                <div class="cards-list__item"><span class="cards__list-field">Card Type</span><span class="cards__list-field-value">Secondary</span></div>
+                                <div class="cards-list__item"><span class="cards__list-field">Bank</span><span class="cards__list-field-value">DBL Bank</span></div>
+                                <div class="cards-list__item card-list__item--hide"><span class="cards__list-field">Card Number</span><span class="cards__list-field-value">**** **** 5600</span></div>
+                                <div class="cards-list__item card-list__item--hide"><span class="cards__list-field">Name in Card</span><span class="cards__list-field-value">William</span></div>
+                                <div class="cards-list__item"><a class="cards__list-link" href="./index.html">View Details</a></div>
+                            </li>
+                        </ul>
+    
+            </section>               
+</div>
+
+            <div class="main-content__group main-content__group--two">
+            <section class="add-card">
+                <h3 class="add-card__title">Add New Card</h3>
+                    <div class="add-card__form-group">
+                        <div class="add-card__text-group">
+                        <p class="add-card__text">
+                            Credit Card generally means a plastic card issued by Scheduled Commercial Banks assigned to a Cardholder, with a credit limit, that can be used to purchase goods and services on credit or obtain cash advances.
+                        </p>
+                        </div>
+                        <form class="add-card__form" aria-label="Add New Card">
+                            <div class="add-card__input-group">
+                                <div class="add-card__input-inner-group">
+                                <label for="card-type" class="add-card__label">Card Type</label>
+                                <input id="card-type" class="add-card__input-field" type="text" placeholder="Classic">
+                                </div>
+                                <div class="add-card__input-inner-group">
+                                <label for="name-on-card" class="add-card__label">Name On Card</label>
+                                <input id="name-on-card" class="add-card__input-field" type="text" placeholder="My Cards">
+                                </div>
+                            </div>
+                            <div class="add-card__input-group">
+                                <div class="add-card__input-inner-group">
+                                <label for="card-number" class="add-card__label">Card Number</label>
+                                <input id="card-number" class="add-card__input-field" type="text" placeholder="**** **** ****">
+                                </div>
+                                <div class="add-card__input-inner-group">
+                                <label for="expiry-date" class="add-card__label">Expiration Date</label>
+                                <input id="expiry-date" class="add-card__input-field" type="text" placeholder="25 January 2025" onfocus="(this.type='date')">
+                                </div>
+                            </div>
+                            <button class="add-card__btn">Add Card</button>
+                        </form>
+                        </div>
+            </section>
+
+            <section class="card-settings" aria-labelledby="card-settings-title">
+                    <h3 id="card-settings-title" class="card-settings__title">Card Setting</h3>
+                    <ul class="card-settings__list">
+                        <li class="card-settings__item">
+                            <div class="card-settings__icon">
+                                <i class="icon-credit"></i>
+                            </div>
+                            <div class="card-settings__text-group">
+                                <p class="card-settings__text">Block Card<span class="card-settings__text--two">Instantly block your card</span></p>
+                            </div>
+                        </li>
+                        <li class="card-settings__item">
+                            <div class="card-settings__icon card-settings__icon--purple">
+                                <i class="icon-padlock"></i>
+                            </div>
+                            <div class="card-settings__text-group">
+                                <p class="card-settings__text">Change Pincode<span class="card-settings__text--two">Choose another pin code</span></p>
+                            </div>
+                        </li>
+                        <li class="card-settings__item">
+                            <div class="card-settings__icon card-settings__icon--pink">
+                                <i class="icon-g"></i>
+                            </div>
+                            <div class="card-settings__text-group">
+                                <p class="card-settings__text">Add to Google Pay<span class="card-settings__text--two">Withdraw without any card</span></p>
+                            </div>
+                        </li>
+                        <li class="card-settings__item">
+                            <div class="card-settings__icon card-settings__icon--green">
+                                <i class="icon-apple"></i>
+                            </div>
+                            <div class="card-settings__text-group">
+                                <p class="card-settings__text">Add to Apple Pay<span class="card-settings__text--two">Withdraw without any card</span></p>
+                            </div>
+                        </li>
+                        <li class="card-settings__item">
+                            <div class="card-settings__icon card-settings__icon--green">
+                                <i class="icon-apple"></i>
+                            </div>
+                            <div class="card-settings__text-group card-settings-inner-div">
+                                <p class="card-settings__text">Add to Apply Store<span class="card-settings__text--two">Withdraw without any card</span></p>
+                            </div>
+                        </li>
+                    </ul>
+            </section>
+            </div>
+        </main>
+
+        
+    </div>
+  </body>
+</html>
